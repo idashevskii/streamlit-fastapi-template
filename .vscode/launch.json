@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Frontend",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 15678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/frontend",
+          "remoteRoot": "/code"
+        },
+        {
+          "localRoot": "${workspaceFolder}/frontend/.venv/lib/python3.12/site-packages",
+          "remoteRoot": "/usr/local/lib/python3.12/site-packages"
+        }
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "Debug Backend",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 25678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/backend",
+          "remoteRoot": "/code"
+        },
+        {
+          "localRoot": "${workspaceFolder}/backend/.venv/lib/python3.12/site-packages",
+          "remoteRoot": "/usr/local/lib/python3.12/site-packages"
+        }
+      ],
+      "justMyCode": false
+    }
+  ]
+}
