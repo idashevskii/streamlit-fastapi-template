@@ -11,7 +11,7 @@
       "pathMappings": [
         {
           "localRoot": "${workspaceFolder}/frontend",
-          "remoteRoot": "/code"
+          "remoteRoot": "/app"
         },
         {
           "localRoot": "${workspaceFolder}/frontend/.venv/lib/python3.12/site-packages",
@@ -31,7 +31,7 @@
       "pathMappings": [
         {
           "localRoot": "${workspaceFolder}/backend",
-          "remoteRoot": "/code"
+          "remoteRoot": "/app"
         },
         {
           "localRoot": "${workspaceFolder}/backend/.venv/lib/python3.12/site-packages",
