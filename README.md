@@ -10,8 +10,8 @@ docker compose up -d --build
 ```
 
 Open in browser:
-- [API Docs](http://localhost:3000/docs)
-- [UI](http://localhost:8080/)
+- [API Docs](http://localhost/api/docs)
+- [UI](http://localhost/)
 
 
 ### OPTIONAL: Install dependecies on host

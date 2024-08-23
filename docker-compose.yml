@@ -5,16 +5,20 @@ x-logging: &logging
   driver: json-file
 
 services:
+
+  reverse-proxy:
+    build: ./reverse-proxy
+    restart: always
+    logging: *logging
+    ports:
+      - "80:80"
+
   frontend:
     build: ./frontend
     restart: always
     logging: *logging
-    ports:
-      - "8080:80"
 
   backend:
     build: ./backend
     restart: always
     logging: *logging
-    ports:
-      - "3000:80"
